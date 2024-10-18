@@ -1,6 +1,6 @@
 # Car Rent
 
-** Designing a unique and stunning website for luxury car rentals🏎⭐ **
+Designing a unique and stunning website for luxury car rentals🏎⭐
 
 ![16](https://github.com/user-attachments/assets/8163e6e1-2001-44a9-a182-09ddc504cf5e)
 
