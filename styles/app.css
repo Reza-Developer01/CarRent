@@ -1,0 +1,770 @@
+/* ==== Variables ==== */
+:root {
+    --primary-color: #3563E9;
+    --border-color: rgba(195, 212, 233, 0.4);
+    --white-color: #FFFFFF;
+}
+
+
+/* ==== Configuration ==== */
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+    /* 62.5% => 10px */
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    font-size: 1.6rem;
+    line-height: 1.6;
+    font-family: "PlusJakarta-Regular", sans-serif;
+    background-color: #F6F7F9;
+}
+
+
+/* ==== Custom Resets ==== */
+#svg {
+    width: 2.4rem;
+    height: 2.4rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+input,
+button {
+    outline: none;
+    border: none;
+}
+
+
+/* ==== Components ==== */
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.4rem;
+    background-color: var(--primary-color);
+    font-family: "PlusJakarta-SemiBold", sans-serif;
+    font-size: 1.2rem;
+    color: var(--white-color);
+    width: 12.8rem;
+    height: 4.4rem;
+}
+
+.section-title {
+    font-family: "PlusJakarta-SemiBold", sans-serif;
+    font-size: 1.4rem;
+    letter-spacing: -0.28px;
+    color: #90A3BF;
+}
+
+
+/* ==== Start Header ==== */
+.header {
+    background-color: var(--white-color);
+    padding: 3.2rem 2.4rem;
+    height: 28.8rem;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.app-logo {
+    font-family: "PlusJakarta-Bold", sans-serif;
+    font-size: 2.4rem;
+    color: var(--primary-color);
+}
+
+.app-logo__text {
+    color: inherit;
+}
+
+.header__profile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header__profile-img {
+    width: 100%;
+}
+
+.form-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 5rem;
+    gap: 1.6rem;
+    margin-top: 3.2rem;
+}
+
+.search-box {
+    display: flex;
+    align-items: center;
+    gap: .8rem;
+    border: 1px solid var(--border-color);
+    padding: 1.2rem 0 1.2rem 2.4rem;
+    height: 100%;
+    border-radius: 1rem;
+    flex-grow: 1;
+}
+
+.search-box__search-icon {}
+
+.search-box__input {
+    height: 100%;
+    font-family: "PlusJakarta-Medium", sans-serif;
+    font-size: 1.4rem;
+    letter-spacing: -0.28px;
+    color: #596780;
+    padding-right: 2.4rem;
+    flex-grow: 1;
+    background-color: transparent;
+}
+
+.form-content__btn-filter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid var(--border-color);
+    width: 4.8rem;
+    height: 4.8rem;
+    border-radius: 1rem;
+    cursor: pointer;
+    transition: all 250ms ease-in-out;
+}
+
+.search-box__filter-icon {}
+
+.desktop {
+    display: none;
+}
+
+.header__links {
+    display: flex;
+    gap: 2rem;
+}
+
+.header__link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 4.4rem;
+    height: 4.4rem;
+    border: 1px solid var(--border-color);
+    border-radius: 100%;
+}
+
+.header__link:nth-of-type(2) {
+    position: relative;
+}
+
+.header__link:nth-of-type(2)::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 1.1rem;
+    height: 1.1rem;
+    background-color: #FF4423;
+    border-radius: 100%;
+}
+
+.header__link:last-child {
+    border: none;
+}
+
+.nav__wrapper {
+    display: flex;
+    align-items: center;
+    gap: 0;
+    flex-grow: 1;
+}
+
+.mobile .container {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+/* ==== Finish Header ==== */
+
+
+/* ==== Start Main ==== */
+.main {
+    margin: 5rem 0;
+}
+
+
+/* ==== Start Section Banner ==== */
+.banner {
+    margin-top: -15rem;
+}
+
+.banner__items {
+    display: flex;
+    /*flex-wrap: wrap;*/
+    gap: 3.2rem;
+}
+
+.banner__content {
+    width: 100%;
+    border-radius: 1rem;
+    display: flex;
+    background: linear-gradient(#54A6FF, #3563E9);
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-between;
+    padding: 1.6rem 1.6rem .4rem;
+    color: var(--white-color);
+    position: relative;
+    z-index: 1;
+}
+
+.banner__content::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-image: url("../images/pattern.png");
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.banner__content:last-child {
+    display: none;
+}
+
+.banner__content:last-child .banner__btn {
+    background-color: #54A6FF;
+}
+
+.banner__data {}
+
+.banner__title {
+    font-family: "PlusJakarta-SemiBold", sans-serif;
+    letter-spacing: -0.32px;
+    margin-bottom: 1.2rem;
+}
+
+.banner__description {
+    max-width: 21.6rem;
+    font-size: 1.2rem;
+    font-family: "PlusJakarta-Medium", sans-serif;
+    margin-bottom: 1.6rem;
+}
+
+.banner__btn {}
+
+.banner__cover {
+    width: 100%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2.6rem;
+}
+
+.banner__img {
+    width: 19.6rem;
+    height: 5.6rem;
+    margin: 0 auto;
+}
+
+#desktop__photo-1,
+#desktop__photo-2 {
+    display: none;
+}
+
+/* ==== Finish Section Banner ==== */
+
+
+/* ==== Start Section Set Time ==== */
+.set-time {
+    margin-top: 5rem;
+}
+
+.pick-up,
+.drop-off {
+    background: var(--white-color);
+    padding: 1.6rem;
+    border-radius: 1rem;
+    /*height: 12rem;*/
+    display: flex;
+    flex-direction: column;
+}
+
+.pick-up__header {
+    display: flex;
+    align-items: center;
+    gap: .8rem;
+    margin-bottom: 2.4rem;
+}
+
+.pick-up__header-title {
+    color: #1A202C;
+    font-family: "PlusJakarta-SemiBold", sans-serif;
+    letter-spacing: -0.32px;
+}
+
+.pick-up__header-circle-1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(53, 99, 233, 0.3);
+    width: 1.6rem;
+    height: 1.6rem;
+    border-radius: 10rem;
+}
+
+.pick-up__header-circle-2 {
+    display: flex;
+    background: rgba(53, 99, 233, 1);
+    width: .8rem;
+    height: .8rem;
+    border-radius: 10rem;
+}
+
+.pick-up__content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.pick-up__content-line {
+    display: inline-block;
+    width: .1rem;
+    height: 4.4rem;
+    background-color: var(--border-color);
+}
+
+.pick-up__item {}
+
+.pick-up__item-title {
+    font-family: "PlusJakarta-Bold", sans-serif;
+    letter-spacing: -0.32px;
+    color: #1A202C;
+    margin-bottom: .8rem;
+}
+
+.pick-up__item-text {
+    font-size: 1.2rem;
+    letter-spacing: -0.12px;
+    color: #90A3BF;
+    display: flex;
+    align-items: center;
+    gap: .4rem;
+    cursor: pointer;
+}
+
+.pick-up__item-text svg {
+    width: 1.2rem !important;
+    height: 1.2rem !important;
+}
+
+.set-time__button {
+    /*width: 100%;*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: -1.8rem 0;
+}
+
+.set-time__btn {
+    width: 6rem;
+    height: 6rem;
+    border-radius: 1rem;
+    box-shadow: rgba(16, 50, 147, 0.32) 0px 8px 24px;
+}
+
+.drop-off .pick-up__header-circle-1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(92, 175, 252, 0.3);
+    width: 1.6rem;
+    height: 1.6rem;
+    border-radius: 10rem;
+}
+
+.drop-off .pick-up__header-circle-2 {
+    display: flex;
+    background: rgba(84, 166, 255, 1);
+    width: .8rem;
+    height: .8rem;
+    border-radius: 10rem;
+}
+
+.pick-up__item-text__desktop {
+    display: none;
+}
+
+/* ==== Finish Section Set Time ==== */
+
+
+/* ==== Start Section Popular Car ==== */
+.popular-car {
+    margin-top: 5rem;
+}
+
+.popular-car__head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.popular-car__title {}
+
+.popular-car__link {
+    display: flex;
+    font-size: 1.2rem;
+    font-family: "PlusJakarta-SemiBold", sans-serif;
+    color: var(--primary-color);
+}
+
+.cars {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3.2rem;
+    margin-top: 2rem;
+}
+
+.car {
+    width: 24rem;
+    background-color: var(--white-color);
+    border-radius: 1rem;
+    padding: 1.6rem;
+    flex-grow: 1;
+}
+
+.car__banner {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.car__img {}
+
+.car__filter {
+    width: 100%;
+    height: 2.2rem;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.00) 0%, #FFF 100%);
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: 0 auto;
+}
+
+.car__header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 3.2rem;
+}
+
+.car__heart {}
+
+.car__heart--active {
+    color: #ED3F3F;
+}
+
+.car__info {}
+
+.car__name {
+    font-family: "PlusJakarta-Bold", sans-serif;
+    letter-spacing: -0.24px;
+}
+
+.car__category-name {
+    color: #90A3BF;
+    font-family: "PlusJakarta-Medium", sans-serif;
+    font-size: 1.2rem;
+    letter-spacing: -0.24px;
+}
+
+.car__data-items {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 3.2rem;
+}
+
+.car__data-item {
+    display: flex;
+    align-items: center;
+    gap: .4rem;
+}
+
+.car__data-item #svg {
+    width: 1.4rem;
+    height: 1.4rem;
+}
+
+.car__data-item-text {
+    font-size: 1.2rem;
+    font-family: "PlusJakarta-Medium", sans-serif;
+    letter-spacing: -0.24px;
+    color: #90A3BF;
+}
+
+.car__footer {
+    margin-top: 2.8rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.car__price {
+    font-family: "PlusJakarta-Bold", sans-serif;
+    letter-spacing: -0.12px;
+    color: #1A202C;
+    display: flex;
+    align-items: center;
+    font-size: 1.6rem;
+}
+
+.car__unit {
+    font-size: 2rem;
+}
+
+.car__price-day {
+    color: #90A3BF;
+    font-size: 1.2rem;
+}
+
+.car__footer-btn {
+    border: 2px solid var(--primary-color);
+    transition: all 250ms ease-in-out;
+    font-size: 1.4rem;
+}
+
+.car__footer-btn:hover {
+    background-color: transparent;
+    color: var(--primary-color);
+}
+
+/* ==== Finish Section Popular Car ==== */
+
+
+/* ==== Start Section Recomendation Car ==== */
+.recomendation-car {
+    margin-top: 5rem;
+}
+
+.recomendation-car__head {}
+
+.recomendation-car__title {}
+
+.items {
+    margin-top: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.item:nth-child(8),
+.item:nth-child(7),
+.item:nth-child(6) {
+    display: none;
+}
+
+.item {
+    width: 32.7rem;
+    background-color: var(--white-color);
+    border-radius: 1rem;
+    padding: 1.6rem;
+    flex-grow: 1;
+}
+
+.item__header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.item__info {
+    display: flex;
+    flex-direction: column;
+    gap: .4rem;
+}
+
+.item__name {
+    font-family: "PlusJakarta-Bold", sans-serif;
+    letter-spacing: -0.32px;
+    color: #1A202C;
+}
+
+.item__category-name {
+    font-family: "PlusJakarta-Medium", sans-serif;
+    font-size: 1.2rem;
+    letter-spacing: -0.32px;
+    color: #90A3BF;
+}
+
+.item__heart {}
+
+.item__main {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    margin-top: 1.2rem;
+}
+
+.item__banner {
+    position: relative;
+}
+
+.item__img {}
+
+.car__filter {}
+
+.item__data {
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+}
+
+.item__data-info {
+    color: #90A3BF;
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+}
+
+.item__data-info #svg {
+    width: 1.4rem;
+    height: 1.4rem;
+}
+
+.item__data-info-text {
+    font-family: "PlusJakarta-Medium", sans-serif;
+    font-size: 1.2rem;
+    letter-spacing: -0.32px;
+}
+
+.item__footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 3.6rem;
+}
+
+.item__price {
+    color: #1A202C;
+    font-size: 1.6rem;
+    font-family: "PlusJakarta-Bold", sans-serif;
+}
+
+.item__price span {
+    color: #90A3BF;
+    font-size: 1.2rem;
+}
+
+.item__footer-btn {
+    border: 2px solid var(--primary-color);
+    transition: all 250ms ease-in-out;
+    font-size: 1.4rem;
+}
+
+.item__footer-btn:hover {
+    background: transparent;
+    color: var(--primary-color);
+}
+
+/* ==== Finish Section Recomendation Car ==== */
+
+
+/* ==== Start Section Main Footer ==== */
+.main-footer {
+    margin-top: 4.8rem;
+}
+
+.main-footer__wrapper-btn {
+    display: flex;
+    justify-content: center;
+}
+
+.main-footer__btn {
+    margin: 0 auto;
+}
+
+/* ==== Start Section Main Footer ==== */
+
+/* ==== Finish Main ==== */
+
+
+/* ==== Start Footer ==== */
+.footer {
+    background-color: var(--white-color);
+    margin-top: 4.8rem;
+    padding: 4rem 2.4rem;
+}
+
+.footer__wrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.footer__left {}
+
+.footer__text {
+    color: #90A3BF;
+    font-family: "PlusJakarta-Medium", sans-serif;
+    font-size: 1.2rem;
+    letter-spacing: -0.12px;
+    max-width: 21.6rem;
+    margin-top: 1.6rem;
+}
+
+.footer__right {
+    margin-top: 4.8rem;
+}
+
+.footer-pages {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.footer-list {
+    width: 15rem;
+}
+
+.footer-list__title {
+    font-family: "PlusJakarta-SemiBold", sans-serif;
+    font-size: 2rem;
+    letter-spacing: -0.4px;
+    color: #1A202C;
+    margin-bottom: 1.6rem;
+}
+
+.footer-list__item {
+    font-family: "PlusJakarta-Medium", sans-serif;
+    color: #90A3BF;
+    margin-bottom: .8rem;
+}
+
+.footer-list__item:last-child {
+    margin-bottom: 0;
+}
+
+.footer-list__link {
+    color: inherit;
+}
+
+.footer-list__link:hover {
+    text-decoration: underline;
+}
+
+/* ==== Finish Footer ==== */

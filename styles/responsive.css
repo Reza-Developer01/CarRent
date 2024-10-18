@@ -1,0 +1,308 @@
+@media screen and (max-width: 992px) {
+    .banner__items {
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .form-content {
+        flex-wrap: wrap;
+    }
+
+    .form-content__btn-filter {
+        flex-grow: 1;
+    }
+}
+
+
+@media screen and (min-width: 576px) {
+}
+
+@media screen and (min-width: 768px) {
+    .mobile {
+        display: none;
+    }
+
+    .header {
+        height: auto;
+        padding: 4rem 3.2rem 4rem 6rem;
+        border-bottom: 1px solid var(--border-color);
+    }
+
+    .desktop {
+        display: block;
+    }
+
+    .app-logo {
+        font-size: 3.2rem;
+        letter-spacing: -0.96px;
+    }
+
+    .search-box {
+        border-radius: 10rem;
+        padding: 1rem 2rem;
+    }
+
+    .nav__wrapper {
+        gap: 3.4rem;
+    }
+
+    .header__link:last-child {
+        display: none;
+    }
+
+    .header__links {
+        margin-left: 3.4rem;
+    }
+
+    .banner {
+        margin-top: 0;
+    }
+
+    .banner__content {
+        padding: 2.4rem 0 1rem 2.4rem;
+        width: 50%;
+        flex-grow: 1;
+    }
+
+    .banner__title {
+        font-family: "PlusJakarta-SemiBold", sans-serif;
+        font-size: 3.2rem;
+        letter-spacing: -0.96px;
+        max-width: 27.2rem;
+        margin-bottom: 1.6rem;
+    }
+
+    .banner__description {
+        font-family: "PlusJakarta-Medium", sans-serif;
+        font-size: 1.6rem;
+        letter-spacing: -0.32px;
+        max-width: 28.4rem;
+    }
+
+    .banner__btn {
+        font-size: 1.6rem;
+        padding: 1rem 2rem;
+    }
+
+    #mobile__photo-1,
+    #mobile__photo-2 {
+        display: none;
+    }
+
+    #desktop__photo-1,
+    #desktop__photo-2 {
+        display: block;
+    }
+
+    .banner__content:last-child {
+        display: block;
+    }
+
+    .section-title {
+        font-size: 1.6rem;
+        letter-spacing: normal;
+    }
+
+    .popular-car__link {
+        font-size: 1.6rem;
+    }
+
+    .car__name {
+        font-size: 2rem;
+    }
+
+    .car__category-name {
+        font-size: 1.4rem;
+    }
+
+    .car__data-item {
+        gap: .6rem;
+    }
+
+    .car__data-item #svg {
+        width: 2.4rem;
+        height: 2.4rem;
+    }
+
+    .car__data-item-text {
+        color: #90A3BF;
+        font-family: "PlusJakarta-Medium", sans-serif;
+        font-size: 1.4rem;
+    }
+
+    .car__price, .car__unit {
+        font-size: 2rem;
+    }
+
+    .car__price-day {
+        font-size: 1.4rem;
+    }
+
+    .car {
+        padding: 2.4rem;
+    }
+
+    .car__header {
+        margin-bottom: 6.6rem;
+    }
+
+    .car__data-items {
+        margin-top: 7rem;
+    }
+
+    .car__footer {
+        margin-top: 2.4rem;
+    }
+
+    .car__img {
+        width: 23rem;
+    }
+
+    .item__main {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .item__data {
+        flex-direction: row;
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .item__img {
+        width: 22.4rem;
+        margin-top: 5rem;
+    }
+
+    .item__banner {
+        margin-bottom: 5rem;
+    }
+
+    .item__footer {
+        margin-top: 2rem;
+    }
+
+    .item__data-info #svg {
+        width: 2.4rem;
+        height: 2.4rem;
+    }
+
+    .item__data-info {
+        gap: .6rem;
+    }
+
+    .item__data-info-text {
+        font-size: 1.4rem;
+    }
+
+    .item__name {
+        font-size: 2rem;
+    }
+
+    .item__category-name {
+        font-size: 1.4rem;
+        font-family: "PlusJakarta-Bold", sans-serif;
+    }
+
+    .main-footer {
+        margin-top: 6.4rem;
+    }
+
+    .main-footer__btn {
+        font-size: 1.6rem;
+        width: 15.6rem;
+        height: 4.4rem;
+    }
+
+    .item:nth-child(8),
+    .item:nth-child(7),
+    .item:nth-child(6) {
+        display: block;
+    }
+
+    .car__filter {
+        height: 4.4rem;
+    }
+
+    .footer__text {
+        font-size: 1.6rem;
+        max-width: 29.2rem;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .header__link:last-child {
+        display: inline-block;
+    }
+
+    .nav__wrapper {
+        gap: 6.4rem;
+    }
+
+    .header__links {
+        margin-left: 6.4rem;
+    }
+
+    .set-time__wrapper {
+        display: flex;
+        gap: 4.4rem;
+    }
+
+    .pick-up, .drop-off {
+        flex-grow: 1;
+        padding: 2.4rem 4.8rem;
+    }
+
+    .pick-up__header {
+        margin-bottom: 1.6rem;
+    }
+
+    .footer {
+        display: flex;
+        justify-content: space-between;
+        padding: 8rem 6rem;
+    }
+
+    .footer__right {
+        margin-top: 0;
+    }
+
+    .footer-list__title {
+        margin-bottom: 2.4rem;
+    }
+
+    .footer-list__item {
+        margin-bottom: 2rem;
+    }
+
+    .footer__text {
+        color: rgba(19, 19, 19, 0.6);
+    }
+
+    .footer-pages {
+        gap: 6rem;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .search-box {
+        flex-grow: 0;
+        width: 49.2rem;
+    }
+
+    .header__links {
+        margin-left: 0;
+    }
+
+    .pick-up__item-text-mobile {
+        display: none;
+    }
+
+    .pick-up__item-text__desktop {
+        display: block;
+    }
+}
+
+@media screen and (min-width: 1400px) {
+}

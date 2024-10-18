@@ -1,0 +1,971 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <!-- ==== Meta Tags ==== -->
+        <meta charset="UTF-8">
+        <meta name="viewport"
+              content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        
+        <!-- ==== Title Website ==== -->
+        <title>Car Rent | Home</title>
+        
+        <!-- ==== Add Css Files ==== -->
+        <link rel="stylesheet" href="./styles/reset.css">
+        <link rel="stylesheet" href="./styles/fonts.css">
+        <link rel="stylesheet" href="./styles/grid.css">
+        <link rel="stylesheet" href="./styles/app.css">
+        <link rel="stylesheet" href="./styles/responsive.css">
+    </head>
+    <body>
+        <!-- ==== Website Pack Icon ==== -->
+        <svg style="display: none">
+            <symbol id="search" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M11.5 21C16.7467 21 21 16.7467 21 11.5C21 6.25329 16.7467 2 11.5 2C6.25329 2 2 6.25329 2 11.5C2 16.7467 6.25329 21 11.5 21Z"
+                      stroke="#596780" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M22 22L20 20" stroke="#596780" stroke-width="1.5" stroke-linecap="round"
+                      stroke-linejoin="round" />
+            </symbol>
+            <symbol id="filter" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M22 6.5H16" stroke="#596780" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
+                      stroke-linejoin="round" />
+                <path d="M6 6.5H2" stroke="#596780" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
+                      stroke-linejoin="round" />
+                <path d="M10 10C11.933 10 13.5 8.433 13.5 6.5C13.5 4.567 11.933 3 10 3C8.067 3 6.5 4.567 6.5 6.5C6.5 8.433 8.067 10 10 10Z"
+                      stroke="#596780" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
+                      stroke-linejoin="round" />
+                <path d="M22 17.5H18" stroke="#596780" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
+                      stroke-linejoin="round" />
+                <path d="M8 17.5H2" stroke="#596780" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
+                      stroke-linejoin="round" />
+                <path d="M14 21C15.933 21 17.5 19.433 17.5 17.5C17.5 15.567 15.933 14 14 14C12.067 14 10.5 15.567 10.5 17.5C10.5 19.433 12.067 21 14 21Z"
+                      stroke="#596780" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
+                      stroke-linejoin="round" />
+            </symbol>
+            <symbol id="heart" viewBox="0 0 24 24" fill="currentColor"
+                    xmlns="http://www.w3.org/2000/svg">
+                <path d="M16.44 3.09998C14.63 3.09998 13.01 3.97998 12 5.32998C10.99 3.97998 9.37 3.09998 7.56 3.09998C4.49 3.09998 2 5.59998 2 8.68998C2 9.87998 2.19 10.98 2.52 12C4.1 17 8.97 19.99 11.38 20.81C11.72 20.93 12.28 20.93 12.62 20.81C15.03 19.99 19.9 17 21.48 12C21.81 10.98 22 9.87998 22 8.68998C22 5.59998 19.51 3.09998 16.44 3.09998Z"
+                      fill="currentColor" />
+            </symbol>
+            <symbol id="notification" viewBox="0 0 24 24" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                <path d="M19.3399 14.49L18.3399 12.83C18.1299 12.46 17.9399 11.76 17.9399 11.35V8.82C17.9399 6.47 16.5599 4.44 14.5699 3.49C14.0499 2.57 13.0899 2 11.9899 2C10.8999 2 9.91994 2.59 9.39994 3.52C7.44994 4.49 6.09994 6.5 6.09994 8.82V11.35C6.09994 11.76 5.90994 12.46 5.69994 12.82L4.68994 14.49C4.28994 15.16 4.19994 15.9 4.44994 16.58C4.68994 17.25 5.25994 17.77 5.99994 18.02C7.93994 18.68 9.97994 19 12.0199 19C14.0599 19 16.0999 18.68 18.0399 18.03C18.7399 17.8 19.2799 17.27 19.5399 16.58C19.7999 15.89 19.7299 15.13 19.3399 14.49Z"
+                      fill="#596780" />
+                <path d="M14.8299 20.01C14.4099 21.17 13.2999 22 11.9999 22C11.2099 22 10.4299 21.68 9.87993 21.11C9.55993 20.81 9.31993 20.41 9.17993 20C9.30993 20.02 9.43993 20.03 9.57993 20.05C9.80993 20.08 10.0499 20.11 10.2899 20.13C10.8599 20.18 11.4399 20.21 12.0199 20.21C12.5899 20.21 13.1599 20.18 13.7199 20.13C13.9299 20.11 14.1399 20.1 14.3399 20.07C14.4999 20.05 14.6599 20.03 14.8299 20.01Z"
+                      fill="#596780" />
+            </symbol>
+            <symbol id="setting" viewBox="0 0 24 24" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                <path d="M20.1 9.22006C18.29 9.22006 17.55 7.94006 18.45 6.37006C18.97 5.46006 18.66 4.30006 17.75 3.78006L16.02 2.79006C15.23 2.32006 14.21 2.60006 13.74 3.39006L13.63 3.58006C12.73 5.15006 11.25 5.15006 10.34 3.58006L10.23 3.39006C9.78 2.60006 8.76 2.32006 7.97 2.79006L6.24 3.78006C5.33 4.30006 5.02 5.47006 5.54 6.38006C6.45 7.94006 5.71 9.22006 3.9 9.22006C2.86 9.22006 2 10.0701 2 11.1201V12.8801C2 13.9201 2.85 14.7801 3.9 14.7801C5.71 14.7801 6.45 16.0601 5.54 17.6301C5.02 18.5401 5.33 19.7001 6.24 20.2201L7.97 21.2101C8.76 21.6801 9.78 21.4001 10.25 20.6101L10.36 20.4201C11.26 18.8501 12.74 18.8501 13.65 20.4201L13.76 20.6101C14.23 21.4001 15.25 21.6801 16.04 21.2101L17.77 20.2201C18.68 19.7001 18.99 18.5301 18.47 17.6301C17.56 16.0601 18.3 14.7801 20.11 14.7801C21.15 14.7801 22.01 13.9301 22.01 12.8801V11.1201C22 10.0801 21.15 9.22006 20.1 9.22006ZM12 15.2501C10.21 15.2501 8.75 13.7901 8.75 12.0001C8.75 10.2101 10.21 8.75006 12 8.75006C13.79 8.75006 15.25 10.2101 15.25 12.0001C15.25 13.7901 13.79 15.2501 12 15.2501Z"
+                      fill="#596780" />
+            </symbol>
+            <symbol id="swap" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M7.16051 3.83577L7.16051 17.4536" stroke="white" stroke-width="1.5" stroke-linecap="round"
+                      stroke-linejoin="round" />
+                <path d="M3.08273 7.93188L7.1605 3.83522L11.2383 7.93188" stroke="white" stroke-width="1.5"
+                      stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M17.0887 20.1671L17.0887 6.54934" stroke="white" stroke-width="1.5" stroke-linecap="round"
+                      stroke-linejoin="round" />
+                <path d="M21.1665 16.071L17.0887 20.1677L13.0109 16.071" stroke="white" stroke-width="1.5"
+                      stroke-linecap="round" stroke-linejoin="round" />
+            </symbol>
+            <symbol id="arrow-down" viewBox="0 0 12 12" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                <path d="M6.00025 8.3997C5.65025 8.3997 5.30025 8.2647 5.03525 7.9997L1.77525 4.7397C1.63025 4.5947 1.63025 4.3547 1.77525 4.2097C1.92025 4.0647 2.16025 4.0647 2.30525 4.2097L5.56525 7.4697C5.80525 7.7097 6.19525 7.7097 6.43525 7.4697L9.69525 4.2097C9.84025 4.0647 10.0803 4.0647 10.2253 4.2097C10.3703 4.3547 10.3703 4.5947 10.2253 4.7397L6.96525 7.9997C6.70025 8.2647 6.35025 8.3997 6.00025 8.3997Z"
+                      fill="#1A202C" stroke="#1A202C" stroke-width="0.5" />
+            </symbol>
+            <symbol id="heart-outline" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12.62 20.81C12.28 20.93 11.72 20.93 11.38 20.81C8.48 19.82 2 15.69 2 8.68998C2 5.59998 4.49 3.09998 7.56 3.09998C9.38 3.09998 10.99 3.97998 12 5.33998C13.01 3.97998 14.63 3.09998 16.44 3.09998C19.51 3.09998 22 5.59998 22 8.68998C22 15.69 15.52 19.82 12.62 20.81Z"
+                      stroke="#90A3BF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+            </symbol>
+            <symbol id="gas-station" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M13.0317 5.44249L11.8651 4.85916C11.6492 4.75416 11.3809 4.83582 11.2759 5.05166C11.1651 5.27332 11.2526 5.53582 11.4684 5.64082L12.3959 6.10166V8.89582L10.2084 8.90166V2.91666C10.2084 1.74999 9.42675 1.16666 8.45841 1.16666H3.79175C2.82341 1.16666 2.04175 1.74999 2.04175 2.91666V12.3958H1.16675C0.927581 12.3958 0.729248 12.5942 0.729248 12.8333C0.729248 13.0725 0.927581 13.2708 1.16675 13.2708H11.0834C11.3226 13.2708 11.5209 13.0725 11.5209 12.8333C11.5209 12.5942 11.3226 12.3958 11.0834 12.3958H10.2084V9.77666L12.8334 9.77082C13.0784 9.77082 13.2709 9.57249 13.2709 9.33332V5.83332C13.2709 5.66999 13.1776 5.51832 13.0317 5.44249ZM3.50008 4.01916C3.50008 3.20832 3.99591 2.91666 4.60258 2.91666H7.65341C8.25425 2.91666 8.75008 3.20832 8.75008 4.01916V4.73666C8.75008 5.54166 8.25425 5.83332 7.64758 5.83332H4.60258C3.99591 5.83332 3.50008 5.54166 3.50008 4.73082V4.01916ZM3.79175 7.14582H5.54175C5.78091 7.14582 5.97925 7.34416 5.97925 7.58332C5.97925 7.82249 5.78091 8.02082 5.54175 8.02082H3.79175C3.55258 8.02082 3.35425 7.82249 3.35425 7.58332C3.35425 7.34416 3.55258 7.14582 3.79175 7.14582Z"
+                      fill="#90A3BF" />
+            </symbol>
+            <symbol id="car" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M7 1C3.688 1 1 3.688 1 7C1 10.312 3.688 13 7 13C10.312 13 13 10.312 13 7C13 3.688 10.318 1 7 1Z"
+                      fill="#90A3BF" />
+                <rect x="2" y="2" width="10" height="10" rx="5" fill="white" />
+                <path d="M7 3C4.792 3 3 4.792 3 7C3 9.208 4.792 11 7 11C9.208 11 11 9.208 11 7C11 4.792 9.212 3 7 3Z"
+                      fill="#90A3BF" />
+                <rect x="8" y="6" width="4" height="2" fill="#90A3BF" />
+                <rect x="2" y="6" width="4" height="2" fill="#90A3BF" />
+                <rect x="6" y="8" width="2" height="4" fill="#90A3BF" />
+                <rect x="4" y="4" width="6" height="6" rx="3" fill="white" />
+            </symbol>
+            <symbol id="users" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M5.25008 1.16666C3.72175 1.16666 2.47925 2.40916 2.47925 3.93749C2.47925 5.43666 3.65175 6.64999 5.18008 6.70249C5.22675 6.69666 5.27341 6.69666 5.30841 6.70249C5.32008 6.70249 5.32591 6.70249 5.33758 6.70249C5.34341 6.70249 5.34341 6.70249 5.34925 6.70249C6.84258 6.64999 8.01508 5.43666 8.02091 3.93749C8.02091 2.40916 6.77841 1.16666 5.25008 1.16666Z"
+                      fill="#90A3BF" />
+                <path d="M8.21331 8.25418C6.58581 7.16918 3.93164 7.16918 2.29248 8.25418C1.55164 8.75001 1.14331 9.42085 1.14331 10.1383C1.14331 10.8558 1.55164 11.5208 2.28664 12.0108C3.10331 12.5592 4.17664 12.8333 5.24998 12.8333C6.32331 12.8333 7.39664 12.5592 8.21331 12.0108C8.94831 11.515 9.35664 10.85 9.35664 10.1267C9.35081 9.40918 8.94831 8.74418 8.21331 8.25418Z"
+                      fill="#90A3BF" />
+                <path d="M11.6607 4.28165C11.754 5.41332 10.949 6.40499 9.83488 6.53915C9.82905 6.53915 9.82905 6.53915 9.82321 6.53915H9.80571C9.77071 6.53915 9.73571 6.53915 9.70655 6.55082C9.14071 6.57999 8.62155 6.39915 8.23071 6.06665C8.83155 5.52999 9.17571 4.72499 9.10571 3.84999C9.06488 3.37749 8.90155 2.94582 8.65655 2.57832C8.87821 2.46749 9.13488 2.39749 9.39738 2.37415C10.5407 2.27499 11.5615 3.12665 11.6607 4.28165Z"
+                      fill="#90A3BF" />
+                <path d="M12.8276 9.67751C12.7809 10.2433 12.4192 10.7333 11.8126 11.0658C11.2292 11.3867 10.4942 11.5383 9.76506 11.5208C10.1851 11.1417 10.4301 10.6692 10.4767 10.1675C10.5351 9.44417 10.1909 8.75001 9.50256 8.19584C9.11172 7.88667 8.65672 7.64167 8.16089 7.46084C9.45006 7.08751 11.0717 7.33834 12.0692 8.14334C12.6059 8.57501 12.8801 9.11751 12.8276 9.67751Z"
+                      fill="#90A3BF" />
+            </symbol>
+        </svg>
+        
+        
+        <!-- ==== Start Header ==== -->
+        <header class="header">
+            <!-- Mobile Device -->
+            <div class="mobile">
+                <div class="container">
+                    <nav class="nav">
+                        <!-- Logo -->
+                        <h1 class="app-logo">
+                            <a href="index.html" class="app-logo__text">
+                                MORENT
+                            </a>
+                        </h1>
+                        
+                        <!-- User Profile -->
+                        <div class="header__profile">
+                            <img src="images/User.png" alt="user profile" class="header__profile-img">
+                        </div>
+                    </nav>
+                    <!-- Search Box -->
+                    <div class="form-content">
+                        <form action="#" class="search-box">
+                            <svg class="search-box__search-icon" id="svg">
+                                <use xlink:href="#search"></use>
+                            </svg>
+                            <input type="text" class="search-box__input" placeholder="Search something here">
+                        </form>
+                        
+                        <div class="form-content__btn-filter">
+                            <svg class="search-box__filter-icon" id="svg">
+                                <use xlink:href="#filter"></use>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Desktop Device -->
+            <div class="desktop">
+                <nav class="nav">
+                    <div class="nav__wrapper">
+                        <!-- Logo -->
+                        <h1 class="app-logo">
+                            <a href="index.html" class="app-logo__text">
+                                MORENT
+                            </a>
+                        </h1>
+                        
+                        <form action="#" class="search-box">
+                            <svg class="search-box__search-icon" id="svg">
+                                <use xlink:href="#search"></use>
+                            </svg>
+                            
+                            <input type="text" class="search-box__input" placeholder="Search something here">
+                            
+                            <svg class="search-box__filter-icon" id="svg">
+                                <use xlink:href="#filter"></use>
+                            </svg>
+                        </form>
+                    </div>
+                    
+                    <!-- Header Links -->
+                    <div class="header__links">
+                        <a href="#" class="header__link">
+                            <svg id="svg" style="color: #596780">
+                                <use xlink:href="#heart"></use>
+                            </svg>
+                        </a>
+                        <a href="#" class="header__link">
+                            <svg id="svg">
+                                <use xlink:href="#notification"></use>
+                            </svg>
+                        </a>
+                        <a href="#" class="header__link">
+                            <svg id="svg">
+                                <use xlink:href="#setting"></use>
+                            </svg>
+                        </a>
+                        <a href="#" class="header__link">
+                            <img src="./images/UserProfileDesktop.png" alt="user profile image"
+                                 class="header__link-user-image">
+                        </a>
+                    </div>
+                </nav>
+            </div>
+        </header>
+        <!-- ==== Finish Header ==== -->
+        
+        <!-- ==== Start Main ==== -->
+        <main class="main">
+            <!-- ==== Start Section Banner ==== -->
+            <section class="banner">
+                <div class="container">
+                    <div class="banner__items">
+                        <div class="banner__content">
+                            <div class="banner__data">
+                                <h2 class="banner__title">The Best Platform for Car Rental</h2>
+                                <p class="banner__description">
+                                    Ease of doing a car rental safely and reliably. Of course at a low price.
+                                </p>
+                                <a href="#" class="btn banner__btn">Rental Car</a>
+                            </div>
+                            <div class="banner__cover">
+                                <img src="images/MobileCarPhoto1.png" id="mobile__photo-1" alt="car banner"
+                                     class="banner__img">
+                                <img src="./images/DesktopCarPhoto1.png" id="desktop__photo-1" alt="car banner">
+                            </div>
+                        </div>
+                        <div class="banner__content">
+                            <div class="banner__data">
+                                <h2 class="banner__title">Easy way to rent a car at a low price</h2>
+                                <p class="banner__description">
+                                    Providing cheap car rental services and safe and comfortable facilities.
+                                </p>
+                                <a href="#" class="btn banner__btn">Rental Car</a>
+                            </div>
+                            <div class="banner__cover">
+                                <img src="./images/DesktopCarPhoto2.png" id="desktop__photo-2" alt="car banner">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- ==== Finish Section Banner ==== -->
+            
+            <!-- ==== Start Section Set Time ==== -->
+            <section class="set-time">
+                <div class="container">
+                    <div class="set-time__wrapper">
+                        <div class="pick-up">
+                            <div class="pick-up__header">
+                            <span class="pick-up__header-circle-1">
+                                <span class="pick-up__header-circle-2"></span>
+                            </span>
+                                <p class="pick-up__header-title">Pick - Up</p>
+                            </div>
+                            
+                            <div class="pick-up__content">
+                                <div class="pick-up__item">
+                                    <h3 class="pick-up__item-title">Locations</h3>
+                                    <p class="pick-up__item-text">
+                                        <span class="pick-up__item-text-mobile">Semarang</span>
+                                        <span class="pick-up__item-text__desktop">Select your city</span>
+                                        <svg id="svg">
+                                            <use xlink:href="#arrow-down"></use>
+                                        </svg>
+                                    </p>
+                                </div>
+                                <span class="pick-up__content-line"></span>
+                                <div class="pick-up__item">
+                                    <h3 class="pick-up__item-title">Date</h3>
+                                    <p class="pick-up__item-text">
+                                        <span class="pick-up__item-text__desktop">Select your date</span>
+                                        <span class="pick-up__item-text-mobile">20 July 2022</span>
+                                        <svg id="svg">
+                                            <use xlink:href="#arrow-down"></use>
+                                        </svg>
+                                    </p>
+                                </div>
+                                <span class="pick-up__content-line"></span>
+                                <div class="pick-up__item">
+                                    <h3 class="pick-up__item-title">Time</h3>
+                                    <p class="pick-up__item-text">
+                                        <span class="pick-up__item-text__desktop">Select your time</span>
+                                        <span class="pick-up__item-text-mobile">07.00</span>
+                                        <svg id="svg">
+                                            <use xlink:href="#arrow-down"></use>
+                                        </svg>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="set-time__button">
+                            <a href="#" class="btn set-time__btn">
+                                <svg id="svg">
+                                    <use xlink:href="#swap"></use>
+                                </svg>
+                            </a>
+                        </div>
+                        <div class="drop-off">
+                            <div class="pick-up__header">
+                            <span class="pick-up__header-circle-1">
+                                <span class="pick-up__header-circle-2"></span>
+                            </span>
+                                <p class="pick-up__header-title">Drop - Off</p>
+                            </div>
+                            
+                            <div class="pick-up__content">
+                                <div class="pick-up__item">
+                                    <h3 class="pick-up__item-title">Locations</h3>
+                                    <p class="pick-up__item-text">
+                                        <span class="pick-up__item-text-mobile">Semarang</span>
+                                        <span class="pick-up__item-text__desktop">Select your city</span>
+                                        <svg id="svg">
+                                            <use xlink:href="#arrow-down"></use>
+                                        </svg>
+                                    </p>
+                                </div>
+                                <span class="pick-up__content-line"></span>
+                                <div class="pick-up__item">
+                                    <h3 class="pick-up__item-title">Date</h3>
+                                    <p class="pick-up__item-text">
+                                        <span class="pick-up__item-text__desktop">Select your date</span>
+                                        <span class="pick-up__item-text-mobile">20 July 2022</span>
+                                        <svg id="svg">
+                                            <use xlink:href="#arrow-down"></use>
+                                        </svg>
+                                    </p>
+                                </div>
+                                <span class="pick-up__content-line"></span>
+                                <div class="pick-up__item">
+                                    <h3 class="pick-up__item-title">Time</h3>
+                                    <p class="pick-up__item-text">
+                                        <span class="pick-up__item-text__desktop">Select your time</span>
+                                        <span class="pick-up__item-text-mobile">07.00</span>
+                                        <svg id="svg">
+                                            <use xlink:href="#arrow-down"></use>
+                                        </svg>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- ==== Finish Section Set Time ==== -->
+            
+            <!-- ==== Start Section Popular Car ==== -->
+            <section class="popular-car">
+                <div class="container">
+                    <div class="popular-car__head">
+                        <h2 class="section-title popular-car__title">Popular Car</h2>
+                        <a href="#" class="popular-car__link">View All</a>
+                    </div>
+                    
+                    <div class="cars">
+                        <div class="car">
+                            <div class="car__header">
+                                <div class="car__info">
+                                    <h3 class="car__name">Koenigsegg</h3>
+                                    <span class="car__category-name">Sport</span>
+                                </div>
+                                <div class="car__heart">
+                                    <svg id="svg">
+                                        <use xlink:href="#heart" class="car__heart--active"></use>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="car__banner">
+                                <img src="./images/car1.png" alt="car 1" class="car__img">
+                                <div class="car__filter"></div>
+                            </div>
+                            <div class="car__data-items">
+                                <div class="car__data-item">
+                                    <svg id="svg">
+                                        <use xlink:href="#gas-station"></use>
+                                    </svg>
+                                    <span class="car__data-item-text">90L</span>
+                                </div>
+                                <div class="car__data-item">
+                                    <svg id="svg">
+                                        <use xlink:href="#car"></use>
+                                    </svg>
+                                    <span class="car__data-item-text">Manual</span>
+                                </div>
+                                <div class="car__data-item">
+                                    <svg id="svg">
+                                        <use xlink:href="#users"></use>
+                                    </svg>
+                                    <span class="car__data-item-text">2 People</span>
+                                </div>
+                            </div>
+                            <div class="car__footer">
+                                <p class="car__price">
+                                    <span class="car__unit">$</span>
+                                    99.00/
+                                    <span class="car__price-day"> day</span>
+                                </p>
+                                <a href="#" class="btn car__footer-btn">Rental Now</a>
+                            </div>
+                        </div>
+                        <div class="car">
+                            <div class="car__header">
+                                <div class="car__info">
+                                    <h3 class="car__name">Nissan GT - R</h3>
+                                    <span class="car__category-name">Sport</span>
+                                </div>
+                                <div class="car__heart">
+                                    <svg id="svg">
+                                        <use xlink:href="#heart-outline"></use>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="car__banner">
+                                <img src="./images/car2.png" alt="car 2" class="car__img">
+                                <div class="car__filter"></div>
+                            </div>
+                            <div class="car__data-items">
+                                <div class="car__data-item">
+                                    <svg id="svg">
+                                        <use xlink:href="#gas-station"></use>
+                                    </svg>
+                                    <span class="car__data-item-text">90L</span>
+                                </div>
+                                <div class="car__data-item">
+                                    <svg id="svg">
+                                        <use xlink:href="#car"></use>
+                                    </svg>
+                                    <span class="car__data-item-text">Manual</span>
+                                </div>
+                                <div class="car__data-item">
+                                    <svg id="svg">
+                                        <use xlink:href="#users"></use>
+                                    </svg>
+                                    <span class="car__data-item-text">2 People</span>
+                                </div>
+                            </div>
+                            <div class="car__footer">
+                                <p class="car__price">
+                                    <span class="car__unit">$</span>
+                                    80.00/
+                                    <span class="car__price-day"> day</span>
+                                </p>
+                                <a href="#" class="btn car__footer-btn">Rental Now</a>
+                            </div>
+                        </div>
+                        <div class="car">
+                            <div class="car__header">
+                                <div class="car__info">
+                                    <h3 class="car__name">Rolls - Royce</h3>
+                                    <span class="car__category-name">Rolls - Royce</span>
+                                </div>
+                                <div class="car__heart">
+                                    <svg id="svg">
+                                        <use xlink:href="#heart" class="car__heart--active"></use>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="car__banner">
+                                <img src="./images/car3.png" alt="car 3" class="car__img">
+                                <div class="car__filter"></div>
+                            </div>
+                            <div class="car__data-items">
+                                <div class="car__data-item">
+                                    <svg id="svg">
+                                        <use xlink:href="#gas-station"></use>
+                                    </svg>
+                                    <span class="car__data-item-text">90L</span>
+                                </div>
+                                <div class="car__data-item">
+                                    <svg id="svg">
+                                        <use xlink:href="#car"></use>
+                                    </svg>
+                                    <span class="car__data-item-text">Manual</span>
+                                </div>
+                                <div class="car__data-item">
+                                    <svg id="svg">
+                                        <use xlink:href="#users"></use>
+                                    </svg>
+                                    <span class="car__data-item-text">2 People</span>
+                                </div>
+                            </div>
+                            <div class="car__footer">
+                                <p class="car__price">
+                                    <span class="car__unit">$</span>
+                                    96.00/
+                                    <span class="car__price-day"> day</span>
+                                </p>
+                                <a href="#" class="btn car__footer-btn">Rental Now</a>
+                            </div>
+                        </div>
+                        <div class="car">
+                            <div class="car__header">
+                                <div class="car__info">
+                                    <h3 class="car__name">Nissan GT - R</h3>
+                                    <span class="car__category-name">Sport</span>
+                                </div>
+                                <div class="car__heart">
+                                    <svg id="svg">
+                                        <use xlink:href="#heart-outline"></use>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="car__banner">
+                                <img src="./images/car4.png" alt="car 4" class="car__img">
+                                <div class="car__filter"></div>
+                            </div>
+                            <div class="car__data-items">
+                                <div class="car__data-item">
+                                    <svg id="svg">
+                                        <use xlink:href="#gas-station"></use>
+                                    </svg>
+                                    <span class="car__data-item-text">90L</span>
+                                </div>
+                                <div class="car__data-item">
+                                    <svg id="svg">
+                                        <use xlink:href="#car"></use>
+                                    </svg>
+                                    <span class="car__data-item-text">Manual</span>
+                                </div>
+                                <div class="car__data-item">
+                                    <svg id="svg">
+                                        <use xlink:href="#users"></use>
+                                    </svg>
+                                    <span class="car__data-item-text">2 People</span>
+                                </div>
+                            </div>
+                            <div class="car__footer">
+                                <p class="car__price">
+                                    <span class="car__unit">$</span>
+                                    80.00/
+                                    <span class="car__price-day"> day</span>
+                                </p>
+                                <a href="#" class="btn car__footer-btn">Rental Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- ==== Finish Section Popular Car ==== -->
+            
+            <!-- ==== Start Section Recomendation Car ==== -->
+            <section class="recomendation-car">
+                <div class="container">
+                    <h2 class="section-title recomendation-car__title">Recomendation Car</h2>
+                    
+                    <div class="items">
+                        <div class="item">
+                            <div class="item__header">
+                                <div class="item__info">
+                                    <h3 class="item__name">All New Rush</h3>
+                                    <span class="item__category-name">SUV</span>
+                                </div>
+                                <div class="item__heart">
+                                    <svg id="svg">
+                                        <use xlink:href="#heart" class="car__heart--active"></use>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="item__main">
+                                <div class="item__banner">
+                                    <img src="./images/car5.png" alt="car 5" class="item__img">
+                                    <div class="car__filter"></div>
+                                </div>
+                                <div class="item__data">
+                                    <div class="item__data-info">
+                                        <svg id="svg">
+                                            <use xlink:href="#gas-station"></use>
+                                        </svg>
+                                        <span class="item__data-info-text">90L</span>
+                                    </div>
+                                    <div class="item__data-info">
+                                        <svg id="svg">
+                                            <use xlink:href="#car"></use>
+                                        </svg>
+                                        <span class="item__data-info-text">Manual</span>
+                                    </div>
+                                    <div class="item__data-info">
+                                        <svg id="svg">
+                                            <use xlink:href="#users"></use>
+                                        </svg>
+                                        <span class="item__data-info-text">6 People</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item__footer">
+                                <p class="item__price">$80.00/ <span>day</span></p>
+                                
+                                <a href="#" class="btn item__footer-btn">Rental Now</a>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="item__header">
+                                <div class="item__info">
+                                    <h3 class="item__name">CR - V</h3>
+                                    <span class="item__category-name">SUV</span>
+                                </div>
+                                <div class="item__heart">
+                                    <svg id="svg">
+                                        <use xlink:href="#heart-outline" class="car__heart--active"></use>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="item__main">
+                                <div class="item__banner">
+                                    <img src="./images/car6.png" alt="car 6" class="item__img">
+                                    <div class="car__filter"></div>
+                                </div>
+                                <div class="item__data">
+                                    <div class="item__data-info">
+                                        <svg id="svg">
+                                            <use xlink:href="#gas-station"></use>
+                                        </svg>
+                                        <span class="item__data-info-text">90L</span>
+                                    </div>
+                                    <div class="item__data-info">
+                                        <svg id="svg">
+                                            <use xlink:href="#car"></use>
+                                        </svg>
+                                        <span class="item__data-info-text">Manual</span>
+                                    </div>
+                                    <div class="item__data-info">
+                                        <svg id="svg">
+                                            <use xlink:href="#users"></use>
+                                        </svg>
+                                        <span class="item__data-info-text">6 People</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item__footer">
+                                <p class="item__price">$80.00/ <span>day</span></p>
+                                
+                                <a href="#" class="btn item__footer-btn">Rental Now</a>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="item__header">
+                                <div class="item__info">
+                                    <h3 class="item__name">All New Terios</h3>
+                                    <span class="item__category-name">SUV</span>
+                                </div>
+                                <div class="item__heart">
+                                    <svg id="svg">
+                                        <use xlink:href="#heart-outline" class="car__heart--active"></use>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="item__main">
+                                <div class="item__banner">
+                                    <img src="./images/car7.png" alt="car 7" class="item__img">
+                                    <div class="car__filter"></div>
+                                </div>
+                                <div class="item__data">
+                                    <div class="item__data-info">
+                                        <svg id="svg">
+                                            <use xlink:href="#gas-station"></use>
+                                        </svg>
+                                        <span class="item__data-info-text">90L</span>
+                                    </div>
+                                    <div class="item__data-info">
+                                        <svg id="svg">
+                                            <use xlink:href="#car"></use>
+                                        </svg>
+                                        <span class="item__data-info-text">Manual</span>
+                                    </div>
+                                    <div class="item__data-info">
+                                        <svg id="svg">
+                                            <use xlink:href="#users"></use>
+                                        </svg>
+                                        <span class="item__data-info-text">6 People</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item__footer">
+                                <p class="item__price">$80.00/ <span>day</span></p>
+                                
+                                <a href="#" class="btn item__footer-btn">Rental Now</a>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="item__header">
+                                <div class="item__info">
+                                    <h3 class="item__name">New MG ZS</h3>
+                                    <span class="item__category-name">SUV</span>
+                                </div>
+                                <div class="item__heart">
+                                    <svg id="svg">
+                                        <use xlink:href="#heart-outline" class="car__heart--active"></use>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="item__main">
+                                <div class="item__banner">
+                                    <img src="./images/car8.png" alt="car 8" class="item__img">
+                                    <div class="car__filter"></div>
+                                </div>
+                                <div class="item__data">
+                                    <div class="item__data-info">
+                                        <svg id="svg">
+                                            <use xlink:href="#gas-station"></use>
+                                        </svg>
+                                        <span class="item__data-info-text">90L</span>
+                                    </div>
+                                    <div class="item__data-info">
+                                        <svg id="svg">
+                                            <use xlink:href="#car"></use>
+                                        </svg>
+                                        <span class="item__data-info-text">Manual</span>
+                                    </div>
+                                    <div class="item__data-info">
+                                        <svg id="svg">
+                                            <use xlink:href="#users"></use>
+                                        </svg>
+                                        <span class="item__data-info-text">6 People</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item__footer">
+                                <p class="item__price">$80.00/ <span>day</span></p>
+                                
+                                <a href="#" class="btn item__footer-btn">Rental Now</a>
+                            </div>
+                        </div>
+                        
+                        <div class="item">
+                            <div class="item__header">
+                                <div class="item__info">
+                                    <h3 class="item__name">MG ZX Exclusice</h3>
+                                    <span class="item__category-name">Hatchback</span>
+                                </div>
+                                <div class="item__heart">
+                                    <svg id="svg">
+                                        <use xlink:href="#heart" class="car__heart--active"></use>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="item__main">
+                                <div class="item__banner">
+                                    <img src="./images/car9.png" alt="car 9" class="item__img">
+                                    <div class="car__filter"></div>
+                                </div>
+                                <div class="item__data">
+                                    <div class="item__data-info">
+                                        <svg id="svg">
+                                            <use xlink:href="#gas-station"></use>
+                                        </svg>
+                                        <span class="item__data-info-text">90L</span>
+                                    </div>
+                                    <div class="item__data-info">
+                                        <svg id="svg">
+                                            <use xlink:href="#car"></use>
+                                        </svg>
+                                        <span class="item__data-info-text">Manual</span>
+                                    </div>
+                                    <div class="item__data-info">
+                                        <svg id="svg">
+                                            <use xlink:href="#users"></use>
+                                        </svg>
+                                        <span class="item__data-info-text">6 People</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item__footer">
+                                <p class="item__price">$80.00/ <span>day</span></p>
+                                
+                                <a href="#" class="btn item__footer-btn">Rental Now</a>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="item__header">
+                                <div class="item__info">
+                                    <h3 class="item__name">New MG ZS</h3>
+                                    <span class="item__category-name">SUV</span>
+                                </div>
+                                <div class="item__heart">
+                                    <svg id="svg">
+                                        <use xlink:href="#heart-outline" class="car__heart--active"></use>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="item__main">
+                                <div class="item__banner">
+                                    <img src="./images/car10.png" alt="car 10" class="item__img">
+                                    <div class="car__filter"></div>
+                                </div>
+                                <div class="item__data">
+                                    <div class="item__data-info">
+                                        <svg id="svg">
+                                            <use xlink:href="#gas-station"></use>
+                                        </svg>
+                                        <span class="item__data-info-text">90L</span>
+                                    </div>
+                                    <div class="item__data-info">
+                                        <svg id="svg">
+                                            <use xlink:href="#car"></use>
+                                        </svg>
+                                        <span class="item__data-info-text">Manual</span>
+                                    </div>
+                                    <div class="item__data-info">
+                                        <svg id="svg">
+                                            <use xlink:href="#users"></use>
+                                        </svg>
+                                        <span class="item__data-info-text">6 People</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item__footer">
+                                <p class="item__price">$80.00/ <span>day</span></p>
+                                
+                                <a href="#" class="btn item__footer-btn">Rental Now</a>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="item__header">
+                                <div class="item__info">
+                                    <h3 class="item__name">MG ZX Excite</h3>
+                                    <span class="item__category-name">Hatchback</span>
+                                </div>
+                                <div class="item__heart">
+                                    <svg id="svg">
+                                        <use xlink:href="#heart-outline" class="car__heart--active"></use>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="item__main">
+                                <div class="item__banner">
+                                    <img src="./images/car11.png" alt="car 11" class="item__img">
+                                    <div class="car__filter"></div>
+                                </div>
+                                <div class="item__data">
+                                    <div class="item__data-info">
+                                        <svg id="svg">
+                                            <use xlink:href="#gas-station"></use>
+                                        </svg>
+                                        <span class="item__data-info-text">90L</span>
+                                    </div>
+                                    <div class="item__data-info">
+                                        <svg id="svg">
+                                            <use xlink:href="#car"></use>
+                                        </svg>
+                                        <span class="item__data-info-text">Manual</span>
+                                    </div>
+                                    <div class="item__data-info">
+                                        <svg id="svg">
+                                            <use xlink:href="#users"></use>
+                                        </svg>
+                                        <span class="item__data-info-text">6 People</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item__footer">
+                                <p class="item__price">$80.00/ <span>day</span></p>
+                                
+                                <a href="#" class="btn item__footer-btn">Rental Now</a>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="item__header">
+                                <div class="item__info">
+                                    <h3 class="item__name">New MG ZS</h3>
+                                    <span class="item__category-name">New MG ZS</span>
+                                </div>
+                                <div class="item__heart">
+                                    <svg id="svg">
+                                        <use xlink:href="#heart-outline" class="car__heart--active"></use>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="item__main">
+                                <div class="item__banner">
+                                    <img src="./images/car12.png" alt="car 12" class="item__img">
+                                    <div class="car__filter"></div>
+                                </div>
+                                <div class="item__data">
+                                    <div class="item__data-info">
+                                        <svg id="svg">
+                                            <use xlink:href="#gas-station"></use>
+                                        </svg>
+                                        <span class="item__data-info-text">90L</span>
+                                    </div>
+                                    <div class="item__data-info">
+                                        <svg id="svg">
+                                            <use xlink:href="#car"></use>
+                                        </svg>
+                                        <span class="item__data-info-text">Manual</span>
+                                    </div>
+                                    <div class="item__data-info">
+                                        <svg id="svg">
+                                            <use xlink:href="#users"></use>
+                                        </svg>
+                                        <span class="item__data-info-text">6 People</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item__footer">
+                                <p class="item__price">$80.00/ <span>day</span></p>
+                                
+                                <a href="#" class="btn item__footer-btn">Rental Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- ==== Finish Section Recomendation Car ==== -->
+            
+            <!-- ==== Start Section Main Footer ==== -->
+            <section class="main-footer">
+                <div class="main-footer__wrapper-btn">
+                    <a href="#" class="main-footer__btn btn">Show more car</a>
+                </div>
+            </section>
+            <!-- ==== Finish Section Main Footer ==== -->
+        </main>
+        <!-- ==== Finish Main ==== -->
+        
+        <!-- ==== Start Footer ==== -->
+        <footer class="footer">
+            <div class="footer__left">
+                <h1 class="app-logo">
+                    <a href="index.html" class="app-logo__text">
+                        MORENT
+                    </a>
+                </h1>
+                <p class="footer__text">
+                    Our vision is to provide convenience and help increase your sales business.
+                </p>
+            </div>
+            
+            <div class="footer__right">
+                <div class="footer-pages">
+                    <ul class="footer-list">
+                        <h2 class="footer-list__title">About</h2>
+                        <li class="footer-list__item">
+                            <a href="#" class="footer-list__link">How it works</a>
+                        </li>
+                        <li class="footer-list__item">
+                            <a href="#" class="footer-list__link">Featured</a>
+                        </li>
+                        <li class="footer-list__item">
+                            <a href="#" class="footer-list__link">Partnership</a>
+                        </li>
+                        <li class="footer-list__item">
+                            <a href="#" class="footer-list__link">Bussiness Relation</a>
+                        </li>
+                    </ul>
+                    <ul class="footer-list">
+                        <h2 class="footer-list__title">Socials</h2>
+                        <li class="footer-list__item">
+                            <a href="#" class="footer-list__link">Discord</a>
+                        </li>
+                        <li class="footer-list__item">
+                            <a href="#" class="footer-list__link">Instagram</a>
+                        </li>
+                        <li class="footer-list__item">
+                            <a href="#" class="footer-list__link">Twitter</a>
+                        </li>
+                        <li class="footer-list__item">
+                            <a href="#" class="footer-list__link">Facebook</a>
+                        </li>
+                    </ul>
+                    <ul class="footer-list">
+                        <h2 class="footer-list__title">Community</h2>
+                        <li class="footer-list__item">
+                            <a href="#" class="footer-list__link">Events</a>
+                        </li>
+                        <li class="footer-list__item">
+                            <a href="#" class="footer-list__link">Blog</a>
+                        </li>
+                        <li class="footer-list__item">
+                            <a href="#" class="footer-list__link">Podcast</a>
+                        </li>
+                        <li class="footer-list__item">
+                            <a href="#" class="footer-list__link">Invite a friend</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+        <!-- ==== Finish Footer ==== -->
+        
+        
+        <!-- ==== Add Js File ==== -->
+        <script src="./scripts/main.js"></script>
+    </body>
+</html>
